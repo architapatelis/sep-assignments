@@ -1,0 +1,23 @@
+1. How does your data structure allow developers to access and manipulate the data?
+
+** Ans.
+The data structure used to solve both the Line and Screen problems, is an array. Therefore in order to manipulate the data developers can use Ruby's built in array methods (e.g. #length, #push, #delete, #map etc.).
+
+The Line class also has the #first, #middle, and #last methods that allow a developer to return the person in the front of the line, the person in the middle of the line, and the person at the end of the line, respectively.
+
+For the Screen problem the #insert method provided by the Screen class allows a developer to insert a pixel at a valid x, y location.
+
+
+
+2. If a developer wanted to find a specific element in your data structure, how would you search for it?
+
+** Ans.
+Line: If the developer is looking for a specific person they can use the #search method to see if the person is in the line. If the person is not in the line it will return a value of NIL
+
+Screen: The #at method allows a developer to specify valid x, y location to return that pixel's data. If x and y are invalid, it will return a value of NIL
+
+
+3. What other real-world data can each structure represent?
+One dimensional arrays, such as the one we used to solve the Line problem can be applied to theme park queues or a game where we need to pick cards from a line.
+
+To solve the Screen problem we used a two dimensional array, you can apply this logic to any problem where we encounter rows and columns, such as reading a Periodic table.
