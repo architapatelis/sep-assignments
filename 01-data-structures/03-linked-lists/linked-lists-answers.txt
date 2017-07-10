@@ -1,0 +1,21 @@
+1. What is Spatial Locality and why does it benefit performance?
+**Ans:
+
+Because the CPU and Cache are both located on the same chip, the CPU has quicker access to information stored in the Cache compared to that stored in the Primary memory/RAM. The principal of Spatial Locality is based on the assumption that, if a byte of memory was used recently, nearby bytes are likely to be needed soon. Therefore, if these nearby bytes are also taken from the Primary memory and kept in the Cache, the CPU has quicker access to it. This also means that the chances of a Cache hit are higher than Cache miss. Both of these benefits allow our program to run faster.
+
+2. Compare the performance of an Array to a Linked List using the Benchmark module.
+
+** Compare the time it takes to create a 10,000 item Array to appending 10,000 items to a Linked List.
+
+Array - 0.002069
+Linked List - 0.002764
+
+** Compare the time it takes to access the 5000th element of the Array and the 5000th Node in the Linked List.
+
+Array - 0.000001
+Linked List - 0.000245
+
+** Compare the time it takes to remove the 5000th element from the Array to removing the 5000th Node in the Linked List.
+
+Array - 0.000004
+Linked List - 0.000519
