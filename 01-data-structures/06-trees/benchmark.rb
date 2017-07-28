@@ -40,36 +40,31 @@ puts Benchmark.measure {
   tree.delete(root, 5000)
 }
 
+#**************************************
 
 # Min Binary Heap:
 puts "Inserting in min binary heap"
 puts Benchmark.measure {
-  root = Node.new(shuff_arr[0], shuff_arr[0])
-  heap = Heap.new(root)
+  heap = Heap.new
   (1...shuff_arr.size-1).each do |x|
-    root = heap.root
-    heap.insert(root, Node.new(shuff_arr[x], shuff_arr[x]))
+    heap.insert(Node.new(shuff_arr[x], shuff_arr[x]))
   end
 }
 
 puts "Searching 5000th element in heap"
 puts Benchmark.measure {
-  root = Node.new(shuff_arr[0], shuff_arr[0])
-  heap = Heap.new(root)
+  heap = Heap.new
   (1...shuff_arr.size-1).each do |x|
-    root = heap.root
-    heap.insert(root, Node.new(shuff_arr[x], shuff_arr[x]))
+    heap.insert(Node.new(shuff_arr[x], shuff_arr[x]))
   end
-  heap.find(root, 5000)
+  heap.find(5000)
 }
 
 puts "Deleting a node"
 puts Benchmark.measure {
-  root = Node.new(shuff_arr[0], shuff_arr[0])
-  heap = Heap.new(root)
+  heap = Heap.new
   (1...shuff_arr.size-1).each do |x|
-    root = heap.root
-    heap.insert(root, Node.new(shuff_arr[x], shuff_arr[x]))
+    heap.insert(Node.new(shuff_arr[x], shuff_arr[x]))
   end
-  heap.delete(root, 5000)
+  heap.delete(5000)
 }

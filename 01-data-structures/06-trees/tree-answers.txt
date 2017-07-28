@@ -12,22 +12,22 @@ Deleting a node
 ** Min Binary Heap:
 
 Inserting in min binary heap
-  4.880000   0.020000   4.900000 (4.924343)
+  0.020000   0.000000   0.020000 (0.022014)
 Searching 5000th element in heap
-  5.170000   0.030000   5.200000 (5.222876)
+  0.020000   0.010000   0.030000 (0.024092)
 Deleting a node
-  5.270000   0.010000   5.280000 (5.303319)
+  0.030000   0.000000   0.030000 (0.024564)
 
 1) How much time does an average insertion consume in the Binary Search Tree compared to the Heap?
-Ans: Binary Search Tree performs significantly better than Heap (0.021875 vs 4.924343, respectively)
+Ans: Both Binary Search Tree and Min Binary Heap perform at nearly the same rate (0.021875 vs 0.022014, respectively)
 
 2) How much time does finding 50000 in the Binary Search Tree consume compared to the Heap?
 Ans: Binary Search Tree = 0.017898
-     Heap = 5.222876
+     Heap =  0.024092
 
 3) How much time does the average deletion consume in a Binary Search Tree compared to the Heap?
 Ans: Binary Search Tree = 0.018094
-     Heap = 5.303319
+     Heap = 0.024564
 
 When would you use a Binary Search Tree and why?
 Ans: We can use binary search trees when we want to search over and over again for the same type of data, just like binary searches on arrays are. However, if the data needs to be changed, inserted, or deleted, a binary tree is better than an array. Because, in an array we would have to do a lot of copying when we have a large number of values. Whereas in a binary tree it's just a matter of swapping nodes. A binary tree is memory-efficient because it does not reserve more memory than it needs. A Binary Search tree is also more efficient than a linked list, since we don't potentially have to go through each linked node in order to find a particular node.
