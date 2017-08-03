@@ -1,0 +1,49 @@
+Using proper pseudo-code, describe three or more primitive algorithms used in your day-to-day life.
+
+1) Get Morning News:
+
+  def get_news
+    if_near_tv_remote
+      turn tv on
+      if channel != "CNN"
+        change channel to CNN
+      end
+    else
+      turn ipad on
+      go to PBS website
+    end
+  end
+
+2) Drive to Library:
+
+  def drive_to_library
+    while car_on == true
+      if gas is low
+        go to gas station
+      else
+        take right on California Street
+        take right on Castro Street
+        take left on Mercy
+        park at library
+        checkout room at reception
+      end
+    end
+  end
+
+3) Make Tea:
+
+  def make_tea(num_of_people)
+    loose_tea_leaves = 1/2 tsp * num_of_people
+    cups_of_water = num_of_people + 3/4 cup
+
+    place loose_tea_leaves in teapot
+
+    until water_temp == 180°F
+      boil water
+    end
+
+    rinse loose_tea_leaves with 3/4 cup of boiled_water
+    Pour remaining boiled_water over tea leaves
+    steep 5 minutes
+    pour into tea_cups
+  end
