@@ -1,0 +1,27 @@
+Quick Sort
+  0.000000   0.000000   0.000000 (0.000074)
+Heap Sort
+  0.000000   0.000000   0.000000 (0.000061)
+Bucket Sort
+  0.000000   0.000000   0.000000 (0.000050)
+
+Looking at the bar chart, speculate on why you think some sort algorithms are faster than others and provide rationale as to your thought process.
+
+bar chart - https://docs.google.com/spreadsheets/d/1KYUhrL01dCxXW_HVkJc56wcBeWCAhamppJGiPfIBhLA/edit?usp=sharing
+
+Quick Sort
+worst case: O(n^2)
+average case: O(n lg n)
+
+Heap Sort
+worst case: O(n lg n)
+average case: O(n lg n)
+
+Bucket Sort:
+worst case: O(n^2)
+average case: O(n + k)
+
+
+As per the benchmark test, it seems that divide and conquer algorithms like quick sort and heap sort perform nearly the same in the average case. Quick sort is expected to perform poorly when the pivot point turns out to be the smallest or largest element in the collection, therefore we get a worst case of O(n^2). The other problem I see with using Quick Sort is that it requires recursion, which means that it takes up more memory.
+
+Bucket sort’s best case occurs when the data being sorted can be distributed between the buckets perfectly. It runs in O(n+k) time in the average case where n is the number of elements to be sorted and k is the number of buckets. Bucket sort performs at its worst, O(n^2) when all elements are allocated to the same bucket. This makes bucket sort ideal in cases we know in advance that the input is well dispersed.
