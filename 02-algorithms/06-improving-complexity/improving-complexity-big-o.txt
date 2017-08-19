@@ -1,0 +1,30 @@
+Benchmark Test Results:
+
+poorly written 200:   0.000000   0.000000   0.000000 (0.005143)
+code optimizations 200:   0.000000   0.000000   0.000000 (  0.003434)
+merge sort 200:   0.010000   0.000000   0.010000 (  0.005054)
+heap sort 200:    0.000000   0.000000   0.000000 (  0.001296)
+---------------------------------
+poorly written 1k:    0.120000   0.010000   0.130000 (  0.136015)
+code optimizations 1k:    0.080000   0.000000   0.080000 (  0.081605)
+merge sort 1k:    0.040000   0.000000   0.040000 (  0.039811)
+heap sort 1k:    0.000000   0.000000   0.000000 (  0.007616)
+
+Find the Big-O of each version
+
+1) poorly written and code optimization:
+    It's Insertion Sort algorithm. 
+    Time Complexity: O(n^2)
+    Space Complexity: O(1)
+
+2) Merge Sort:
+    Time Complexity: O(n log n)
+    Space Complexity: O(n)
+
+3) Heap Sort:
+    Time Complexity: O(n log n)
+    Space Complexity: O(1)
+
+In order to sort the collection, I had to pick between Quick Sort, Merge Sort and Heap Sort. The worst case for Quick Sort is O(n^2), which occurs when the pivot is either the smallest or the largest value in the array. Therefore, Quick Sort would perform just as bad a Insertion Sort.
+
+Merge Sort and Heap Sort would perform the same time wise in the worst case, i.e. O(n log n). However, the two algorithms differ in terms of space complexity. Heap sort has a space complexity of O(1) which means that the memory required by the algorithm is constant, i.e. it does not depend on the size of the input. The space complexity for Merge sort is O(n) which means that the memory required by the algorithm has (in the worst case) the same order of magnitude as the size of the input(n). Therefore, as the size of our array increase Heap Sort would use less memory than Merge Sort.
